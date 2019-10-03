@@ -3,13 +3,13 @@ class Queue:
 		self.items = []
 
 	def enque(self, item):
-		return self.items.append(item)
+		self.items.append(item)
 
 	def deque(self):
 		return self.items.pop(0)
 
 	def isEmpty(self):
-		if self.items:
+		if len(self.items):
 			return True
 		return False		
 
